@@ -75,3 +75,12 @@ eBin
 24 : No operation
 25 : write following number to tape
 ```
+
+### ePU Storage Format
+Non-program data is stored with `00` appended before the actual data
+Program data is stored with `1` then the corresponding type indicator:
+- `0` : Instructions
+- `1` : `F`
+- `2` : `L`
+- `3` : `N`
+- `4` : `C`
