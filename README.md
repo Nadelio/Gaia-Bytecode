@@ -19,9 +19,9 @@ Instructions are not prefixed by any character.
 ```java
 1 // increment pointer value instruction
 ```
-File names are not translated.
+File names are not translated, but have a `D` prefixed.
 ```
-somefile.hds
+Dsomefile.hds
 ```
 ePU ROM Positions are translated.
 ```nasm
@@ -43,7 +43,7 @@ HLT
 ```
 eBin
 ```cpp
-10 somefile.hds F0 0 15 L0 2 23 L0 C1 N1 F0 14
+10 Dsomefile.hds F0 0 15 L0 2 23 L0 C1 N1 F0 14
 ```
 
 ### Full Instruction List
