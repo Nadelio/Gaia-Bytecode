@@ -15,6 +15,10 @@ Numbers are prefixed by a `N`.
 ```java
 N0 // Number = 0
 ```
+Strings are prefixed by a `S`, followed by the strings length, and the string encoded as a series of numbers
+```java
+S3 N102 N111 N111 // String = "foo"
+```
 Instructions are not prefixed by any character.
 ```java
 1 // increment pointer value instruction
@@ -84,3 +88,4 @@ Program data is stored with `1` then the corresponding type indicator:
 - `2` : `L`
 - `3` : `N`
 - `4` : `C`
+- `5` : `S`
