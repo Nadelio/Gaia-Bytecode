@@ -23,10 +23,6 @@ Instructions are not prefixed by any character.
 ```java
 1 // increment pointer value instruction
 ```
-File names are not translated, but have a `D` prefixed.
-```
-Dsomefile.hds
-```
 ePU ROM Positions are translated.
 ```nasm
 CDP [10 12] [foo]
@@ -38,7 +34,7 @@ CDP [10 12] [foo]
 ### Example of eBin program
 Hades
 ```nasm
-CDP [somefile.hds] [bar]
+CDP ["somefile.hds"] [bar]
 INCV
 CLB [foo]
 INCP
@@ -47,7 +43,7 @@ HLT
 ```
 eBin
 ```cpp
-10 Dsomefile.hds F0 0 15 L0 2 23 L0 C1 N1 F0 14
+10 S12 N... F0 0 15 L0 2 23 L0 C1 N1 F0 14
 ```
 
 ### Full Instruction List
