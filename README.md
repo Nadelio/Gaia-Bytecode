@@ -1,4 +1,4 @@
-# eBin Bytecode
+# Gaia Bytecode
 Function IDs (aka Dependency IDs) are prefixed by an `F`.
 ```java
 F0 // Function ID = 0
@@ -31,7 +31,7 @@ CDP [10 12] [foo]
 10 N10 N12 F0
 ```
 
-### Example of eBin program
+### Example of Gaia program
 Hades
 ```nasm
 CDP ["somefile.hds"] [bar]
@@ -41,7 +41,7 @@ INCP
 INT [foo == 1] [bar]
 HLT
 ```
-eBin
+Gaia
 ```cpp
 10 S12 N... F0 0 15 L0 2 23 L0 C1 N1 F0 14
 ```
@@ -76,7 +76,7 @@ eBin
 25 : write following number to tape
 ```
 
-### ePU Storage Format
+### Chronos VM Storage Format
 Non-program data is stored with `00` appended before the actual data
 Program data is stored with `1` then the corresponding type indicator:
 - `0` : Instructions
